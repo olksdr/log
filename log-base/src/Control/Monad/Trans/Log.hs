@@ -27,7 +27,7 @@ import Prelude
 import qualified Control.Exception as E
 import qualified Data.HashMap.Strict as H
 
-import Log.Class
+import Control.Monad.Log.Class
 import Log.Types
 import Log.Logger
 
