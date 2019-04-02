@@ -29,7 +29,8 @@ Source-repository head
   Location: https://github.com/scrive/log.git
 
 library
-  exposed-modules:     Log,
+  exposed-modules:     Control.Monad.Trans.Log,
+                       Log,
                        Log.Backend.StandardOutput,
                        Log.Backend.StandardOutput.Bulk,
                        Log.Backend.Text,

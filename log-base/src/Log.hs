@@ -27,11 +27,12 @@ module Log (
     module Log.Class
     -- | 'Log.Data.LogMessage' and 'Log.Data.LogLevel' data definitions.
   , module Log.Types
-    -- | 'Log.Logger.Logger' objects used to perform logging operations in 'Log.Monad.LogT'.
+    -- | 'Log.Logger.Logger' objects used to perform logging
+    -- operations in 'Control.Monad.Trans.LogT'.
   , module Log.Logger
-    -- | 'Log.Monad.LogT' monad transformer that adds logging capabilities to
-    -- the underlying monad.
-  , module Log.Monad
+    -- | 'Control.Monad.Trans.LogT' monad transformer that adds
+    -- logging capabilities to the underlying monad.
+  , module Control.Monad.Trans.Log
    -- * Aeson re-exports
   , object
   , (.=)
@@ -39,7 +40,7 @@ module Log (
 
 import Data.Aeson
 
+import Control.Monad.Trans.Log
 import Log.Class
-import Log.Types
 import Log.Logger
-import Log.Monad
+import Log.Types
