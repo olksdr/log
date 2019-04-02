@@ -8,7 +8,7 @@ import Prelude
 import qualified Data.Text.IO as T
 import System.IO (hFlush, stdout)
 
-import Log.Data
+import Log.Types
 import Log.Logger
 import Log.Internal.Logger
 

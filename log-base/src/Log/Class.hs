@@ -22,7 +22,7 @@ import Data.Time
 import Prelude
 import qualified Data.Text as T
 
-import Log.Data
+import Log.Types
 
 -- | Represents the family of monads with logging capabilities. Each
 -- 'MonadLog' carries with it some associated state (the logging

@@ -19,7 +19,7 @@ import qualified Data.Text as T
 import qualified Data.Text.Encoding as T
 import qualified Data.Vector as V
 
-import Log.Data
+import Log.Types
 import Log.Logger
 import Log.Internal.Logger
 

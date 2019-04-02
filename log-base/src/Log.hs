@@ -26,7 +26,7 @@ module Log (
     -- | 'Log.Class.MonadLog' type class of monads with logging capabilities.
     module Log.Class
     -- | 'Log.Data.LogMessage' and 'Log.Data.LogLevel' data definitions.
-  , module Log.Data
+  , module Log.Types
     -- | 'Log.Logger.Logger' objects used to perform logging operations in 'Log.Monad.LogT'.
   , module Log.Logger
     -- | 'Log.Monad.LogT' monad transformer that adds logging capabilities to
@@ -40,6 +40,6 @@ module Log (
 import Data.Aeson
 
 import Log.Class
-import Log.Data
+import Log.Types
 import Log.Logger
 import Log.Monad

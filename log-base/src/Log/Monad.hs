@@ -28,7 +28,7 @@ import qualified Control.Exception as E
 import qualified Data.HashMap.Strict as H
 
 import Log.Class
-import Log.Data
+import Log.Types
 import Log.Logger
 
 -- | The state that every 'LogT' carries around.

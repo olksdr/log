@@ -19,7 +19,7 @@ import Prelude
 import qualified Data.Text as T
 import qualified Data.Text.IO as T
 
-import Log.Data
+import Log.Types
 import Log.Internal.Logger
 
 -- | Start a logger thread that consumes one queued message at a time.

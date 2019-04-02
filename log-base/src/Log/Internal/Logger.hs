@@ -12,7 +12,7 @@ import Data.Semigroup
 import Control.Exception
 import Prelude
 
-import Log.Data
+import Log.Types
 
 -- | An object used for communication with a logger thread that
 -- outputs 'LogMessage's using e.g. PostgreSQL, Elasticsearch or

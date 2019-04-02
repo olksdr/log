@@ -9,7 +9,7 @@ import Prelude
 import qualified Data.Text.IO as T
 import System.IO
 
-import Log.Data
+import Log.Types
 import Log.Internal.Logger
 import Log.Logger
 

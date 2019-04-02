@@ -10,7 +10,7 @@ import qualified Data.Text as T
 import qualified Data.Text.Lazy as L
 import qualified Data.Text.Lazy.Builder as B
 
-import Log.Data
+import Log.Types
 import Log.Internal.Logger
 
 -- | Create an in-memory logger for the duration of the given action,
