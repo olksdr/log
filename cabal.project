@@ -1,2 +1,8 @@
 packages: log-base, log-elasticsearch, log-postgres
 allow-newer: bloodhound:containers
+             bloodhound:time
+
+source-repository-package
+    type: git
+    location: https://github.com/scrive/bloodhound.git
+    tag: 5e4be04634bbd4225280f3e1330e8f07724e8c0c
