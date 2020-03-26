@@ -26,6 +26,7 @@ import Data.Aeson
 import Data.Text (Text)
 import Prelude
 import qualified Control.Exception as E
+import qualified Control.Monad.Fail as MF
 import qualified Data.HashMap.Strict as H
 
 import Log.Class
@@ -36,7 +37,7 @@ type InnerLogT = ReaderT LoggerEnv
 
 -- | Monad transformer that adds logging capabilities to the underlying monad.
 newtype LogT m a = LogT { unLogT :: InnerLogT m a }
-  deriving (Alternative, Applicative, Functor, Monad, MonadFail, MonadBase b
+  deriving (Alternative, Applicative, Functor, Monad, MF.MonadFail, MonadBase b
            ,MonadCatch ,MonadIO, MonadMask, MonadPlus, MonadThrow, MonadTrans
            ,MonadError e, MonadWriter w, MonadState s)
 
