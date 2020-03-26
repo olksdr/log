@@ -36,8 +36,8 @@ type InnerLogT = ReaderT LoggerEnv
 
 -- | Monad transformer that adds logging capabilities to the underlying monad.
 newtype LogT m a = LogT { unLogT :: InnerLogT m a }
-  deriving (Alternative, Applicative, Functor, Monad, MonadBase b, MonadCatch
-           ,MonadIO, MonadMask, MonadPlus, MonadThrow, MonadTrans
+  deriving (Alternative, Applicative, Functor, Monad, MonadFail, MonadBase b
+           ,MonadCatch ,MonadIO, MonadMask, MonadPlus, MonadThrow, MonadTrans
            ,MonadError e, MonadWriter w, MonadState s)
 
 instance MonadReader r m => MonadReader r (LogT m) where
